@@ -1,5 +1,5 @@
 spring:
-  datasource:
+  datasource1:
     type: com.alibaba.druid.pool.DruidDataSource
     url: jdbc:mysql://localhost:3306/logistics?characterEncoding=utf-8&useSSL=false
     username: root
@@ -52,96 +52,8 @@ spring:
       test-on-borrow: false
       test-on-return: false
 
-  mail:
-    host: smtp.qiye.aliyun.com
-    username: cdcs@app315.net
-    password: Jgw31500
-    properties:
-      smtp:
-        auth: true
-        starttls:
-          enable: true
-          required: true
-      mail:
-        smtp:
-          ssl:
-            enable: true
-
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
 
-qiniu:
-  upload:
-    access-key: bRjsZ9KyHlh438VtBU4YHszEApHMwEgN9QVwDoYB
-    access-secret: MAGrsjcTMSYv3COho1iUWZKOsjfaw9UEn21dsnRV
-    bucket-name: codeplatformtest
-    domain: http://filetest.cjm.so
 
-short:
-  message:
-    url: http://vsms.253.com
-    sendinterface: /msg/send/json
-    userid: N7164404
-    password: LgUkPhjOC9bf54
-
-redis:
-  host: 192.168.2.214
-  port: 6379
-  password: 123456
-  timeout: 0
-  database: 10
-  pool:
-    max-active: 1024
-    max-wait: -1
-    max-idle: 100
-    min-idle: 0
-
-  host10: 192.168.2.214
-  port10: 6379
-  password10: 123456
-  timeout10: 0
-  database10: 10
-  pool10:
-    max-active: 1024
-    max-wait: -1
-    max-idle: 100
-    min-idle: 0
-
-business:
-  likeUrl: http://open.api.tianyancha.com/services/v4/open/searchV2
-  exactUrl: http://open.api.tianyancha.com/services/v4/open/baseinfoV2
-  token: 4cd7919d-d5b3-4318-b62e-c423004a4d72
-
-user:
-  token:
-    timeout: 7200
-    mutual-kick-switch: off  #互踢开关 on-开；off-关
-    refresh-token-end-time: 1800 #距离token有效期还剩多少时间可以刷新token有效期 
-
-swagger2:
-  enable: true
-
-rest:
-  org: http://PLATFORM-USER-SUPERCODE-TEST
-  ms-code: http://PLATFORM-MS-CODETEST
-  trace: http://PLATFORM-TRACE-SUPERCODE-TEST
-
-we:
-  chat:
-    appId: wx38bad6838a0ab232
-    secret: c7c2190b6a5182667e283374a9a8b0d8
-    redirect-uri: http://liujq.free.idcfengye.com/we/chat/login
-
-admin:
-  account: admin
-  password: admin
-  add: true
-
-cookie:
-  domain: kf315.net
-  timeout: 7200
-
-customize-fun: #定制功能的功能url配置
-  product-process: #生产过程定制
-    url-prefix: /trace/product/process/

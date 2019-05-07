@@ -1,13 +1,13 @@
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/logistics?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/logistics?useSSL=false&rewriteBatchedStatements=true&serverTimezone=UTC
     username: root
     password: 123456
 
   datasourceinterceptor:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/logistics?characterEncoding=utf-8&useSSL=false
+    url: jdbc:mysql://localhost:3306/logistics?useSSL=false&rewriteBatchedStatements=true&serverTimezone=UTC
     username: root
     password: 123456
 

@@ -7,11 +7,7 @@ spring:
     username: root
     password: 123456
     
- datasource2:
-    type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/logistics1?useSSL=false&rewriteBatchedStatements=true&serverTimezone=UTC
-    username: root
-    password: 123456
+
 
   datasourceinterceptor:
     type: com.alibaba.druid.pool.DruidDataSource

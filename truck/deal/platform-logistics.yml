@@ -19,4 +19,7 @@ spring:
     date-format: yyyy-MM-dd HH:mm:ss
     time-zone: GMT+8
 
-
+elastic:
+  clusterName: my-elasticsearch-cluster
+  ip1: localhost
+  port: 9300

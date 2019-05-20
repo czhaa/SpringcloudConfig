@@ -20,6 +20,6 @@ spring:
     time-zone: GMT+8
 
 elastic:
-  clusterName: my-elasticsearch-cluster
+  clusterName: wali
   ip1: localhost
   port: 9300

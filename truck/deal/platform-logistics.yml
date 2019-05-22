@@ -5,6 +5,13 @@ spring:
     password: lybptqutnpyobbcj            #邮箱密码
     port: 465
     default-encoding: utf-8       #默认编码
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+            required: true
   profiles:
     active: jdbc
   datasource:

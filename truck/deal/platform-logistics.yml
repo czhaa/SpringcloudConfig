@@ -3,6 +3,7 @@ spring:
     host: smtp.qq.com    #邮箱服务器地址
     username: 674720895@qq.com    #邮箱账号
     password: lybptqutnpyobbcj            #邮箱密码
+    port: 465
     default-encoding: utf-8       #默认编码
   profiles:
     active: jdbc

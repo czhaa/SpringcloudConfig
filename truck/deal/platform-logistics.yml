@@ -57,6 +57,12 @@ spring:
       test-while-idle: true
       test-on-borrow: false
       test-on-return: false 
+      
+  mail:
+    host: smtp.qq.com   	#邮箱服务器地址
+    username: 674720895@qq.com    #邮箱账号
+    password: WEWILLDIE@666			#邮箱密码
+    default-encoding: utf-8	#默认编码
 
   jackson:
     date-format: yyyy-MM-dd HH:mm:ss
